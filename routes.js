@@ -62,6 +62,6 @@ const requestHandeler = (req,res)=>{
 //Finealy it's be like =>
 
 // we can write above code like this commenly
-exports = requestHandeler;
+exports.handler = requestHandeler;
 exports.someText ="Some hard code Text"
 
