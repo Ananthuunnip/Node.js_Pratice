@@ -11,7 +11,7 @@ const requestHandeler = (req,res)=>{
             messages = fs.readFileSync('message.txt', 'utf8')
         }
         res.write("<html>");
-        res.write("<head><title>Instagram</title><head>");
+        res.write("<head><title>Instagram</title></head>");
         res.write("<body><form action='/message' method='POST'><label>"+messages +"</label><br><input type='text' name ='message'><button type='submit'>submit</button></form></body>");
         res.write("</html>");
         return res.end();
