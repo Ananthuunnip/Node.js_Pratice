@@ -39,4 +39,29 @@ const requestHandeler = (req,res)=>{
     res.write("</html>");
     res.end();
 }
-module.exports = requestHandeler;
+
+// first way i wroted=>
+
+// module.exports = requestHandeler;
+
+//second way i wroted=>
+
+// one way to have multiple 
+// module.exports = {
+//     handler : requestHandeler,
+//     someText : "some hard code Text"
+// }; 
+
+//third way i wroted =>
+
+// another way
+// module.exports.handler = requestHandeler;
+// module.exports.someText ="Some hard code Text"
+
+
+//Finealy it's be like =>
+
+// we can write above code like this commenly
+exports = requestHandeler;
+exports.someText ="Some hard code Text"
+
